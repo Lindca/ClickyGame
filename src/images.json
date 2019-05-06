@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "img": "./images/dino1.png"
+    },
+    {
+        "id": 2,
+        "img": "./images/dino2.jpg"
+    },
+    {
+        "id": 3,
+        "img": "./images/dino3.jpg"
+    },
+    {
+        "id": 4,
+        "img": "./images/dino4.jpg"
+    },
+    {
+        "id": 5,
+        "img": "./images/dino5.jpg"
+    },
+    {
+        "id": 6,
+        "img": "./images/dino6.jpg"
+    },
+    {
+        "id": 7,
+        "img": "./images/dino7.jpg"
+    },
+    {
+        "id": 8,
+        "img": "./images/dino8.jpg"
+    },
+    {
+        "id": 9,
+        "img": "./images/dino9.jpg"
+    },
+    {
+        "id": 10,
+        "img": "./images/dino10.jpg"
+    },
+    {
+        "id": 11,
+        "img": "./images/dino11.jpg"
+    },
+    {
+        "id": 12,
+        "img": "..//images/dino12.jpg"
+    },
+    {
+        "id": 13,
+        "img": "./images/dino13.jpg"
+    },
+    {
+        "id": 14,
+        "img": "./images/dino14.jpg"
+    },
+    {
+        "id": 15,
+        "img": "./images/dino15.jpg"
+    }
+]
