@@ -3,21 +3,24 @@ import React from "react";
 function HighScore(props) {
   return (
     <nav className="navbar">
-      <a className="navbar-brand" href="/home">
-        <h2 className="ml-5">
+      <span className="navbar-brand">
+        <h1 className="ml-5">
           Clicky Game
-        </h2>
-      </a>
+        </h1>
+      </span>
 
       <div className="text-center">
-        Click a picture! But don't click it more than once. Try and get to 15!
-      </div>
-
-      <div>
-        Current Score: {props.currentScore}
+        <h2>Click a picture! But don't click it more than once. Try and get to 15!</h2>
       </div>
       <div>
-        High Score: {props.highScore}
+        <h3>
+          Current Score: {props.currentScore}
+        </h3>
+      </div>
+      <div>
+        <h3>
+          High Score: {props.highScore}
+        </h3>
       </div>
     </nav>
   );
