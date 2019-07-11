@@ -1,8 +1,9 @@
 import React from "react";
 import images from "./images.json";
-import Wrapper from "./components/Wrapper/wrapper"
 import HighScore from "./components/HighScore/highScore";
 import Images from "./components/Image/image";
+import { Col, Row } from "./components/Grid";
+import { Jumbotron } from 'reactstrap';
 import "./App.css";
 
 class App extends React.Component {
@@ -43,21 +44,29 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Wrapper>
+        <Jumbotron fluid>
           <div className="container">
-            <HighScore highScore={this.state.highScore} currentScore={this.state.currentScore} />
+            <Row>
+              <Col size="sm-12">
+                <HighScore highScore={this.state.highScore} currentScore={this.state.currentScore} />
+              </Col>
+            </Row>
           </div>
           <div className="container">
-            {this.state.images.map(card => (
-              <Images
-                id={card.id}
-                key={card.id}
-                img={card.img}
-                clickHandler={() => this.handleGuess(card.id)}
-              />
-            ))}
+            <Row>
+              <Col size="sm-12">
+                {this.state.images.map(card => (
+                  <Images
+                    id={card.id}
+                    key={card.id}
+                    img={card.img}
+                    clickHandler={() => this.handleGuess(card.id)}
+                  />
+                ))}
+              </Col>
+            </Row>
           </div>
-        </Wrapper>
+        </Jumbotron>
       </>
     );
   }
