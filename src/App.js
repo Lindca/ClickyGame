@@ -29,13 +29,13 @@ class App extends React.Component {
       this.setState({
         currentScore: this.state.currentScore + 1,
         clickedImage: [...this.state.clickedImage, id],
-        highScore: this.state.currentScore+1>this.state.highScore ? this.state.currentScore+1:this.state.highScore
+        highScore: this.state.currentScore + 1 > this.state.highScore ? this.state.currentScore + 1 : this.state.highScore
       });
     } else {
       alert("You guessed incorrectly! Game is starting over!")
-      this.setState({ 
+      this.setState({
         currentScore: 0,
-        clickedImage:[]
+        clickedImage: []
       });
     }
     this.handleShuffle();
@@ -47,15 +47,16 @@ class App extends React.Component {
           <div className="container">
             <HighScore highScore={this.state.highScore} currentScore={this.state.currentScore} />
           </div>
-
-          {this.state.images.map(card => (
-            <Images
-              id={card.id}
-              key={card.id}
-              img={card.img}
-              clickHandler={() => this.handleGuess(card.id)}
-            />
-          ))}
+          <div className="container">
+            {this.state.images.map(card => (
+              <Images
+                id={card.id}
+                key={card.id}
+                img={card.img}
+                clickHandler={() => this.handleGuess(card.id)}
+              />
+            ))}
+          </div>
         </Wrapper>
       </>
     );
